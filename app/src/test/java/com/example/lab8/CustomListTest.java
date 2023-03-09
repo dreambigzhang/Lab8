@@ -44,6 +44,15 @@ public class CustomListTest {
         list.addCity(city);
         assertTrue(list.CountCities() == 1);
     }
+    @Test
+    void testDeleteCity(){
+        list = MockCityList();
+        City city = new City("Yellowknife", "Northwest Territories");
+        list.addCity(city);
+        list.DeleteCity(city);
+        assertTrue(list.CountCities() == 0);
+    }
+
 
 
 
