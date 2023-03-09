@@ -41,7 +41,7 @@ public class CustomListTest {
         list = MockCityList();
         assertTrue(list.CountCities() == 0);
         City city = new City("Yellowknife", "Northwest Territories");
-        list.add(city);
+        list.addCity(city);
         assertTrue(list.CountCities() == 1);
     }
 
