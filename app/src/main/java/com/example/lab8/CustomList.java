@@ -61,4 +61,9 @@ public class CustomList extends ArrayAdapter<City> {
         this.cities.remove(city);
     }
 
+    public Boolean hasCity(City city) {
+        //return this.cities.contains(city);
+    }
+
+
 }
